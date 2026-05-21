@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Ricardo Castro</title>
+    <meta
+      name="description"
+      content="Engenheiro de Software especializado em sistemas SAP e projetos .NET"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ========== BOOT OVERLAY ========== -->
+    <div class="boot" id="boot" aria-hidden="true">
+      <div class="boot__box">
+        <div>
+          SYS // INICIALIZANDO TERMINAL
+          <span style="color: var(--green)">●</span>
+        </div>
+        <div class="boot__bar"></div>
+        <div class="boot__lines">
+          <div><span>OK</span> &nbsp; carregando runtime…</div>
+          <div><span>OK</span> &nbsp; montando interface…</div>
+          <div><span>OK</span> &nbsp; pronto.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== NAV ========== -->
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="#top" class="logo" aria-label="Início">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__text">RC-CV<em>//</em>0.1</span>
+        </a>
+        <nav class="nav__links" aria-label="Principal">
+          <a href="#about">01 / Sobre</a>
+          <a href="#experience">02 / Experiência</a>
+          <a href="#projects">03 / Projetos</a>
+          <a href="#certifications">04 / Certificados</a>
+          <a href="#contact" class="nav__cta">05 / Contato →</a>
+          <a href="index-en.html" class="nav__lang" aria-label="Switch to English" title="Switch to English">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            EN Version
+          </a>
+        </nav>
+        <button
+          class="nav__burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="container nav__mobile" id="navMobile">
+        <a href="#about">01 / Sobre</a>
+        <a href="#experience">02 / Experiência</a>
+        <a href="#projects">03 / Projetos</a>
+        <a href="#certifications">04 / Certificados</a>
+        <a href="#contact">05 / Contato</a>
+        <a href="index-en.html" class="nav__lang" aria-label="Switch to English">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          EN Version
+        </a>
+      </div>
+    </header>
+
+    <a id="top"></a>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-label="Introdução">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__image"></div>
+        <div class="hero__tint"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__noise"></div>
+        <div class="hero__vignette"></div>
+        <div class="particles" id="particles"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="reveal in hero__text">
+          <span class="hero__badge"
+            ><span class="dot"></span> DISPONÍVEL PARA PROJETOS</span
+          >
+          <h1>
+            <span class="l1">Ricardo</span> <span class="accent">Castro</span>
+            <!-- <span class="l2">_</span> -->
+          </h1>
+          <div class="hero__role">Engenheiro de Software</div>
+          <p class="hero__slogan">
+            <strong>Construindo soluções com tecnologias SAP e .NET</strong>
+            Arquiteto integrações, APIs e backends de missão crítica que
+            movimentam dados, processos e logística em plataformas enterprise.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="#contact">
+              Iniciar Contato <span class="arrow">→</span>
+            </a>
+            <a class="btn btn--ghost" href="#projects">
+              Ver Projetos <span class="arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal in hero__hud-col" style="transition-delay: 0.15s">
+          <div class="hud" aria-hidden="true">
+            <div class="hud__frame">
+              <div class="hud__avatar">
+                <img
+                  class="photo"
+                  src="assets/cyborg.png"
+                  alt=""
+                  loading="eager"
+                  decoding="async"
+                />
+                <div class="scan"></div>
+                <div class="label">// SUBJECT-ID · 0x4A21</div>
+              </div>
+            </div>
+            <div class="hud__corners"><i></i><i></i><i></i><i></i></div>
+            <div class="hud__ticks">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="hud__readout">
+              <div><b>06+</b><span class="mono">ANOS · EXP</span></div>
+              <div><b>40+</b><span class="mono">DEPLOYS</span></div>
+              <div><b>99.9%</b><span class="mono">UPTIME</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>SAP ABAP</span><span>S/4 HANA</span><span>SAP MM</span
+        ><span>SAP SD</span><span>.NET 8</span><span>C#</span
+        ><span>ASP.NET CORE</span><span>ENTITY FRAMEWORK</span
+        ><span>REST · SOAP · OData</span><span>AZURE</span
+        ><span>SQL SERVER</span><span>RABBITMQ</span><span>DOCKER</span>
+        <span>SAP ABAP</span><span>S/4 HANA</span><span>SAP MM</span
+        ><span>SAP SD</span><span>.NET 8</span><span>C#</span
+        ><span>ASP.NET CORE</span><span>ENTITY FRAMEWORK</span
+        ><span>REST · SOAP · OData</span><span>AZURE</span
+        ><span>SQL SERVER</span><span>RABBITMQ</span><span>DOCKER</span>
+      </div>
+    </div>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" aria-labelledby="about-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="mono cyan">// 01 · Perfil</span>
+            <h2 class="section-title" id="about-h">
+              Sobre <span class="gl">o engenheiro</span>
+            </h2>
+            <p class="section-sub">
+              Desenvolvedor Fullstack com experiência na construção de
+              aplicações voltadas à eficiência operacional,
+              <strong style="color: var(--ink); font-weight: 500"
+                >otimização de processos</strong
+              >
+              e integração de sistemas. Atuo próximo do negócio, compreendendo
+              as necessidades dos clientes e desenvolvendo soluções que geram
+              <strong style="color: var(--ink); font-weight: 500"
+                >impacto no dia a dia das pessoas</strong
+              >
+              e das empresas.
+            </p>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <div class="reveal">
+            <div class="about">
+              <p>
+                Tenho como foco desenvolver aplicações confiáveis, escaláveis e
+                sustentáveis a longo prazo, sempre buscando equilíbrio entre
+                performance, manutenibilidade e na
+                <strong>experiência do usuário</strong>.
+              </p>
+            </div>
+            <div class="metrics" role="list">
+              <div class="metric" role="listitem">
+                <b>2.5+</b><span>ANOS · BACKEND</span>
+              </div>
+              <div class="metric" role="listitem">
+                <b>12</b><span>DEPLOYS · CORPORATIVOS</span>
+              </div>
+              <div class="metric" role="listitem">
+                <b>3</b><span>MÓDULOS SAP · EM USO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal stack-lift" style="transition-delay: 0.1s">
+            <div class="id">[DOSSIE_OPERADOR.md]</div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 14px;
+              "
+            >
+              <span class="mono violet">// STACK PRINCIPAL</span>
+              <span
+                style="flex: 1; height: 1px; background: var(--line)"
+              ></span>
+            </div>
+            <div class="stack">
+              <div class="stack__item">
+                <div class="stack__cat">ERP</div>
+                <div class="stack__name">SAP ABAP ECC & S/4 HANA</div>
+                <div class="stack__bar" style="--lvl: 92%"></div>
+              </div>
+              <div class="stack__item">
+                <div class="stack__cat">Backend</div>
+                <div class="stack__name">.NET · C#</div>
+                <div class="stack__bar" style="--lvl: 94%"></div>
+              </div>
+              <div class="stack__item">
+                <div class="stack__cat">CAMADA · API</div>
+                <div class="stack__name">ABAP RESTful Application</div>
+                <div class="stack__bar" style="--lvl: 90%"></div>
+              </div>
+              <div class="stack__item">
+                <div class="stack__cat">DADOS</div>
+                <div class="stack__name">SQL Server · EF Core</div>
+                <div class="stack__bar" style="--lvl: 88%"></div>
+              </div>
+              <div class="stack__item">
+                <div class="stack__cat">SAP UI</div>
+                <div class="stack__name">SAP Fiori · UI5 · Launchpad</div>
+                <div class="stack__bar" style="--lvl: 86%"></div>
+              </div>
+              <div class="stack__item">
+                <div class="stack__cat">Frontend</div>
+                <div class="stack__name">Angular · Typescript</div>
+                <div class="stack__bar" style="--lvl: 84%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section
+      id="experience"
+      aria-labelledby="exp-h"
+      style="
+        background: linear-gradient(
+          180deg,
+          rgba(11, 14, 20, 0),
+          rgba(124, 92, 255, 0.04),
+          rgba(11, 14, 20, 0)
+        );
+      "
+    >
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="mono mag">// 02 · Carreira</span>
+            <h2 class="section-title" id="exp-h">
+              Experiência <span class="gm">Profissional</span>
+            </h2>
+            <p class="section-sub">
+              Registros detalhados das minhas responsabilidades nas entregas e
+              negócios.
+            </p>
+          </div>
+          <div class="id">[/var/log/carreira]</div>
+        </div>
+
+        <div class="timeline">
+          <article class="tl-item reveal">
+            <div class="tl-meta">· Presencial</div>
+            <h3 class="tl-title">Desenvolvedor Fullstack - SAP ABAP</h3>
+            <div class="tl-company">// Empresa Privada</div>
+
+            <div class="tl-body">
+              <p>
+                Atuação no desenvolvimento e sustentação de aplicações SAP nos
+                módulos MM, FI e SD em ambientes ECC e S/4HANA, implementando
+                integrações, customizações e melhorias na performance dos
+                processos.
+              </p>
+
+              <ul>
+                <li>
+                  Desenvolvimento de aplicações utilizando ABAP OO e procedural
+                  para ALVs, programas de carga, transações.
+                </li>
+                <li>
+                  Implementação de Enhancements utilizando BAdIs, User-Exits e
+                  Enhancement Points, garantindo extensibilidade sem impacto no
+                  standard
+                </li>
+
+                <li>
+                  Implementação de integrações SAP via BAPIs, RFCs, OData e
+                  serviços SEGW.
+                </li>
+
+                <li>
+                  Criação de interfaces SAP Fiori utilizando Fiori Elements e
+                  aplicações Freestyle com SAPUI5.
+                </li>
+
+                <li>
+                  Implementação de CDS Views e aplicações RAP para criação de
+                  serviços modernos, modelos de dados otimizados e APIs
+                  alinhadas à arquitetura S/4HANA.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tags">
+              <span class="tag">ABAP OO</span>
+              <span class="tag">RAP</span>
+              <span class="tag">CDS Views</span>
+              <span class="tag">Fiori</span>
+              <span class="tag">S/4HANA</span>
+              <span class="tag">ECC</span>
+            </div>
+
+            <div class="tl-impact">
+              Automatização de processos SAP com sistemas externos, reduzindo
+              processos manuais das rotinas de emissão e integração de notas
+              fiscais.
+            </div>
+          </article>
+
+          <article class="tl-item reveal">
+            <div class="tl-meta">· Híbrido</div>
+            <h3 class="tl-title">Desenvolvedor Fullstack - .NET</h3>
+            <div class="tl-company">// Empresa Privada</div>
+
+            <div class="tl-body">
+              <p>
+                Desenvolvimento e manutenção de aplicações web, atuando em
+                nos módulos da solução Sagres, utilizada por diversas instituições
+                de ensino superior e educação básica em todo o estado da Bahia.
+              </p>
+
+              <ul>
+                <li> Implementação de novas funcionalidades, e resolução de problemas técnicos com ASP.NET</li>
+
+                <li>
+                  Criação da modelagem de dados, procedures e otimização de
+                  queries no SQL Server.
+                </li>
+
+                <li>
+                  Implementação de testes unitários e de integração, garantindo
+                  maior confiabilidade das entregas.
+                </li>
+
+                <li>
+                  Versionamento de código e gerenciamento de pipelines CI/CD
+                  utilizando Azure DevOps Server.
+                </li>
+
+                <li>
+                  Refatoração de sistemas legados e melhoria contínua da
+                  arquitetura e performance das aplicações.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tags">
+              <span class="tag">ASP.NET</span>
+              <span class="tag">C#</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Azure DevOps</span>
+            </div>
+
+            <div class="tl-impact">
+              Otimização de queries e procedures em telas críticas do sistema,
+              reduzindo tempo de carregamento e melhorando a experiência de uso
+              dos usuários.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" aria-labelledby="proj-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="mono cyan">// 03 · Repósitorios</span>
+            <h2 class="section-title" id="proj-h">
+              Projetos <span class="gl">selecionados</span>
+            </h2>
+            <p class="section-sub">
+              Projetos públicos e experiências que refletem minha atuação como desenvolvedor.
+            </p>
+          </div>
+          <div class="id">[~/repos/destaques]</div>
+        </div>
+
+        <div class="projects__grid">
+          <article class="card reveal">
+            <div class="card__preview">
+              <img
+                class="card__preview-img"
+                src="assets/sap-icon.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <span class="card__no">PRJ_001</span>
+              <span class="mono cyan">◆ SAP</span>
+            </div>
+            <h3 class="card__title">Sistema de Certificados RAP</h3>
+            <p class="card__body">
+              Sistema para controle de certificados desenvolvido com RAP.
+            </p>
+            <div class="tags">
+              <span class="tag">ABAP Cloud</span
+              ><span class="tag">Managed RAP</span
+              ><span class="tag">Core Data Services</span>
+            </div>
+            <div class="card__foot">
+              <span class="mono">// código</span>
+              <div class="card__links">
+                <a class="iconlink" href="#" aria-label="GitHub" rel="noopener">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.5 0 12.27c0 5.42 3.44 10.02 8.21 11.65.6.12.82-.27.82-.6 0-.29-.01-1.07-.02-2.1-3.34.74-4.05-1.63-4.05-1.63-.54-1.4-1.34-1.78-1.34-1.78-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.27 1.85 1.27 1.08 1.88 2.82 1.34 3.51 1.02.11-.8.42-1.34.76-1.65-2.67-.31-5.47-1.36-5.47-6.06 0-1.34.47-2.43 1.24-3.29-.12-.31-.54-1.56.12-3.26 0 0 1.01-.33 3.3 1.26.96-.27 1.99-.4 3.01-.41 1.02.01 2.05.14 3.01.41 2.29-1.59 3.3-1.26 3.3-1.26.66 1.7.24 2.95.12 3.26.77.86 1.24 1.95 1.24 3.29 0 4.71-2.81 5.75-5.48 6.05.43.38.81 1.12.81 2.26 0 1.63-.01 2.94-.01 3.34 0 .33.22.72.83.6C20.56 22.29 24 17.69 24 12.27 24 5.5 18.63 0 12 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" style="transition-delay: 0.05s">
+            <div class="card__preview">
+              <img
+                class="card__preview-img"
+                src="assets/fiori-icon.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <span class="card__no">PRJ_002</span>
+              <span class="mono cyan">◆ SAP</span>
+            </div>
+            <h3 class="card__title">Fiori Feedback App</h3>
+            <p class="card__body">
+              Aplicação com Fiori Elements para avaliar os feedbacks de usuários
+              utilizando IA.
+            </p>
+            <div class="tags">
+              <span class="tag">JavaScript</span
+              ><span class="tag">Fiori Elements</span
+              ><span class="tag">OData</span>
+            </div>
+            <div class="card__foot">
+              <span class="mono">// código</span>
+              <div class="card__links">
+                <a class="iconlink" href="#" aria-label="GitHub" rel="noopener">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.5 0 12.27c0 5.42 3.44 10.02 8.21 11.65.6.12.82-.27.82-.6 0-.29-.01-1.07-.02-2.1-3.34.74-4.05-1.63-4.05-1.63-.54-1.4-1.34-1.78-1.34-1.78-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.27 1.85 1.27 1.08 1.88 2.82 1.34 3.51 1.02.11-.8.42-1.34.76-1.65-2.67-.31-5.47-1.36-5.47-6.06 0-1.34.47-2.43 1.24-3.29-.12-.31-.54-1.56.12-3.26 0 0 1.01-.33 3.3 1.26.96-.27 1.99-.4 3.01-.41 1.02.01 2.05.14 3.01.41 2.29-1.59 3.3-1.26 3.3-1.26.66 1.7.24 2.95.12 3.26.77.86 1.24 1.95 1.24 3.29 0 4.71-2.81 5.75-5.48 6.05.43.38.81 1.12.81 2.26 0 1.63-.01 2.94-.01 3.34 0 .33.22.72.83.6C20.56 22.29 24 17.69 24 12.27 24 5.5 18.63 0 12 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" style="transition-delay: 0.1s">
+            <div class="card__preview">
+              <img
+                class="card__preview-img"
+                src="assets/sap-icon.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <span class="card__no">PRJ_003</span>
+              <span class="mono cyan">◆ SAP</span>
+            </div>
+            <h3 class="card__title">Repositório ABAP</h3>
+            <p class="card__body">
+              Repositório com programas, ALV's, programas de carga e
+              enhancements.
+            </p>
+            <div class="tags">
+              <span class="tag">ABAP</span><span class="tag">ALV</span
+              ><span class="tag">ABAP OO</span><span class="tag">S/4HANA</span
+              ><span class="tag">ECC</span>
+            </div>
+            <div class="card__foot">
+              <span class="mono">// código</span>
+              <div class="card__links">
+                <a class="iconlink" href="#" aria-label="GitHub" rel="noopener">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.5 0 12.27c0 5.42 3.44 10.02 8.21 11.65.6.12.82-.27.82-.6 0-.29-.01-1.07-.02-2.1-3.34.74-4.05-1.63-4.05-1.63-.54-1.4-1.34-1.78-1.34-1.78-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.27 1.85 1.27 1.08 1.88 2.82 1.34 3.51 1.02.11-.8.42-1.34.76-1.65-2.67-.31-5.47-1.36-5.47-6.06 0-1.34.47-2.43 1.24-3.29-.12-.31-.54-1.56.12-3.26 0 0 1.01-.33 3.3 1.26.96-.27 1.99-.4 3.01-.41 1.02.01 2.05.14 3.01.41 2.29-1.59 3.3-1.26 3.3-1.26.66 1.7.24 2.95.12 3.26.77.86 1.24 1.95 1.24 3.29 0 4.71-2.81 5.75-5.48 6.05.43.38.81 1.12.81 2.26 0 1.63-.01 2.94-.01 3.34 0 .33.22.72.83.6C20.56 22.29 24 17.69 24 12.27 24 5.5 18.63 0 12 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__preview">
+              <img
+                class="card__preview-img"
+                src="assets/money-icon.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <span class="card__no">PRJ_004</span>
+              <span class="mono mag">◆ C#</span>
+            </div>
+            <h3 class="card__title">CashFlow</h3>
+            <p class="card__body">
+              API desenvolvida para o gerenciamento de despesas pessoais.
+            </p>
+            <div class="tags">
+              <span class="tag">C#</span><span class="tag">ASP.NET Core</span
+              ><span class="tag">MySQL</span>
+            </div>
+            <div class="card__foot">
+              <span class="mono">// código</span>
+              <div class="card__links">
+                <a class="iconlink" href="#" aria-label="GitHub" rel="noopener">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.5 0 12.27c0 5.42 3.44 10.02 8.21 11.65.6.12.82-.27.82-.6 0-.29-.01-1.07-.02-2.1-3.34.74-4.05-1.63-4.05-1.63-.54-1.4-1.34-1.78-1.34-1.78-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.27 1.85 1.27 1.08 1.88 2.82 1.34 3.51 1.02.11-.8.42-1.34.76-1.65-2.67-.31-5.47-1.36-5.47-6.06 0-1.34.47-2.43 1.24-3.29-.12-.31-.54-1.56.12-3.26 0 0 1.01-.33 3.3 1.26.96-.27 1.99-.4 3.01-.41 1.02.01 2.05.14 3.01.41 2.29-1.59 3.3-1.26 3.3-1.26.66 1.7.24 2.95.12 3.26.77.86 1.24 1.95 1.24 3.29 0 4.71-2.81 5.75-5.48 6.05.43.38.81 1.12.81 2.26 0 1.63-.01 2.94-.01 3.34 0 .33.22.72.83.6C20.56 22.29 24 17.69 24 12.27 24 5.5 18.63 0 12 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" style="transition-delay: 0.05s">
+            <div class="card__preview">
+              <img
+                class="card__preview-img"
+                src="assets/coffee-icon.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <span class="card__no">PRJ_005</span>
+              <span class="mono mag">◆ C#</span>
+            </div>
+            <h3 class="card__title">CoffeeShop</h3>
+            <p class="card__body">API desenvolvida para uma loja de café.</p>
+            <div class="tags">
+              <span class="tag">C#</span><span class="tag">Clean Arch</span
+              ><span class="tag">Entity Framework</span
+              ><span class="tag">AWS</span><span class="tag">Redis</span
+              ><span class="tag">SQL Server</span>
+            </div>
+            <div class="card__foot">
+              <span class="mono">// código</span>
+              <div class="card__links">
+                <a class="iconlink" href="#" aria-label="GitHub" rel="noopener">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.5 0 12.27c0 5.42 3.44 10.02 8.21 11.65.6.12.82-.27.82-.6 0-.29-.01-1.07-.02-2.1-3.34.74-4.05-1.63-4.05-1.63-.54-1.4-1.34-1.78-1.34-1.78-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.27 1.85 1.27 1.08 1.88 2.82 1.34 3.51 1.02.11-.8.42-1.34.76-1.65-2.67-.31-5.47-1.36-5.47-6.06 0-1.34.47-2.43 1.24-3.29-.12-.31-.54-1.56.12-3.26 0 0 1.01-.33 3.3 1.26.96-.27 1.99-.4 3.01-.41 1.02.01 2.05.14 3.01.41 2.29-1.59 3.3-1.26 3.3-1.26.66 1.7.24 2.95.12 3.26.77.86 1.24 1.95 1.24 3.29 0 4.71-2.81 5.75-5.48 6.05.43.38.81 1.12.81 2.26 0 1.63-.01 2.94-.01 3.34 0 .33.22.72.83.6C20.56 22.29 24 17.69 24 12.27 24 5.5 18.63 0 12 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" style="transition-delay: 0.1s">
+            <div class="card__preview">
+              <img
+                class="card__preview-img"
+                src="assets/task-icon.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <span class="card__no">PRJ_006</span>
+              <span class="mono mag">◆ C#</span>
+            </div>
+            <h3 class="card__title">Task Management</h3>
+            <p class="card__body">
+              Aplicação Fullstack para gerenciamento de tarefas.
+            </p>
+            <div class="tags">
+              <span class="tag">C#</span><span class="tag">.NET</span
+              ><span class="tag">Angular</span><span class="tag">JWT</span>
+            </div>
+            <div class="card__foot">
+              <span class="mono">// código</span>
+              <div class="card__links">
+                <a class="iconlink" href="#" aria-label="GitHub" rel="noopener">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.5 0 12.27c0 5.42 3.44 10.02 8.21 11.65.6.12.82-.27.82-.6 0-.29-.01-1.07-.02-2.1-3.34.74-4.05-1.63-4.05-1.63-.54-1.4-1.34-1.78-1.34-1.78-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.27 1.85 1.27 1.08 1.88 2.82 1.34 3.51 1.02.11-.8.42-1.34.76-1.65-2.67-.31-5.47-1.36-5.47-6.06 0-1.34.47-2.43 1.24-3.29-.12-.31-.54-1.56.12-3.26 0 0 1.01-.33 3.3 1.26.96-.27 1.99-.4 3.01-.41 1.02.01 2.05.14 3.01.41 2.29-1.59 3.3-1.26 3.3-1.26.66 1.7.24 2.95.12 3.26.77.86 1.24 1.95 1.24 3.29 0 4.71-2.81 5.75-5.48 6.05.43.38.81 1.12.81 2.26 0 1.63-.01 2.94-.01 3.34 0 .33.22.72.83.6C20.56 22.29 24 17.69 24 12.27 24 5.5 18.63 0 12 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS ========== -->
+    <section
+      id="certifications"
+      aria-labelledby="cert-h"
+      style="
+        background: linear-gradient(
+          180deg,
+          rgba(11, 14, 20, 0),
+          rgba(34, 226, 255, 0.04),
+          rgba(11, 14, 20, 0)
+        );
+      "
+    >
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="mono violet">// 04 · Cursos</span>
+            <h2 class="section-title" id="cert-h">
+              Certificações <span class="gl">&amp; treinamentos</span>
+            </h2>
+            <p class="section-sub">
+              Certificações e cursos que aprimoraram meu conhecimento ao longo
+              da minha jornada.
+            </p>
+          </div>
+          <div class="id">[VERIFICADO · CHAIN_OK]</div>
+        </div>
+
+        <div class="certs__grid">
+          <div class="cert reveal">
+            <div class="cert__seal cert__seal--img" aria-hidden="true">
+              <img
+                src="assets/cert-sap.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="cert__issuer">Desenvolvimento SAP ABAP</div>
+            <h3 class="cert__title">Academia ABAP Clássico</h3>
+          </div>
+
+          <div class="cert reveal" style="transition-delay: 0.05s">
+            <div class="cert__seal cert__seal--img" aria-hidden="true">
+              <img
+                src="assets/cert-aws.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="cert__issuer">Fundamentos de Computação em Nuvem</div>
+            <h3 class="cert__title">AWS Academy Cloud Foundations</h3>
+          </div>
+
+          <div class="cert reveal" style="transition-delay: 0.1s">
+            <div class="cert__seal cert__seal--img" aria-hidden="true">
+              <img
+                src="assets/cert-sap.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="cert__issuer">Modelagem de Dados com CDS Views</div>
+            <h3 class="cert__title">Core Data Services para ABAP</h3>
+          </div>
+
+          <div class="cert reveal">
+            <div class="cert__seal cert__seal--img" aria-hidden="true">
+              <img
+                src="assets/cert-net.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="cert__issuer">Desenvolvimento de APIs com .NET</div>
+            <h3 class="cert__title">Web API ASP.NET Core Essencial</h3>
+          </div>
+
+          <div class="cert reveal" style="transition-delay: 0.05s">
+            <div class="cert__seal cert__seal--img" aria-hidden="true">
+              <img
+                src="assets/cert-sap.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="cert__issuer">Desenvolvimento SAP com RAP</div>
+            <h3 class="cert__title">
+              ABAP RESTful Application Programming Model
+            </h3>
+          </div>
+
+          <div class="cert reveal" style="transition-delay: 0.1s">
+            <div class="cert__seal cert__seal--img" aria-hidden="true">
+              <img
+                src="assets/cert-docker.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="cert__issuer">Containerização e DevOps</div>
+            <h3 class="cert__title">Ambientes Containerizados com Docker</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact" aria-labelledby="cnt-h">
+      <div class="container reveal">
+        <div class="contact__wrap">
+          <span class="corner-tl"></span><span class="corner-br"></span>
+          <div class="contact__grid">
+            <div>
+              <span class="mono mag">// 05 · Contato</span>
+              <h2 id="cnt-h" style="margin-top: 14px">
+                Vamos <span class="accent">construir</span> seu projeto juntos.
+              </h2>
+              <p
+                style="color: var(--ink-dim); max-width: 46ch; margin-top: 18px"
+              >
+                Disponível para projetos Fullstack, integrações SAP, arquitetura
+                de software e soluções enterprise.
+              </p>
+              <p
+                style="color: var(--ink-dim); max-width: 46ch; margin-top: 8px"
+              >
+                Tempo médio de resposta:
+                <strong style="color: var(--ink); font-weight: 500"
+                  >menos de 24 horas</strong
+                >.
+              </p>
+              <div
+                style="
+                  margin-top: 24px;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 10px;
+                "
+              >
+                <span
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: var(--green);
+                    box-shadow: 0 0 10px var(--green);
+                  "
+                ></span>
+                <span class="mono green">CANAL · ABERTO</span>
+              </div>
+            </div>
+
+            <div class="channels" role="list">
+              <a
+                class="channel"
+                href="mailto:ricardo.castro.linkedin@gmail.com"
+                role="listitem"
+              >
+                <span class="channel__icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <rect x="3" y="5" width="18" height="14" rx="1" />
+                    <path d="M3 7l9 6 9-6" />
+                  </svg>
+                </span>
+                <span class="channel__meta">
+                  <span class="channel__label">E-mail</span>
+                  <span class="channel__value"
+                    >ricardo.castro.linkedin@gmail.com</span
+                  >
+                </span>
+                <span class="channel__arrow">→</span>
+              </a>
+              <a
+                class="channel"
+                href="https://www.linkedin.com/in/rickccastro"
+                target="_blank"
+                rel="noopener"
+                role="listitem"
+              >
+                <span class="channel__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.5h4.56V23H.22V8.5zM8.34 8.5h4.37v1.98h.06c.61-1.15 2.1-2.36 4.33-2.36 4.63 0 5.49 3.05 5.49 7.01V23h-4.56v-6.43c0-1.53-.03-3.5-2.13-3.5-2.13 0-2.46 1.66-2.46 3.39V23H8.34V8.5z"
+                    />
+                  </svg>
+                </span>
+                <span class="channel__meta">
+                  <span class="channel__label">LinkedIn</span>
+                  <span class="channel__value">in / rickccastro</span>
+                </span>
+                <span class="channel__arrow">↗</span>
+              </a>
+              <a
+                class="channel"
+                href="https://github.com/Rickccastro"
+                target="_blank"
+                rel="noopener"
+                role="listitem"
+              >
+                <span class="channel__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.5 0 12.27c0 5.42 3.44 10.02 8.21 11.65.6.12.82-.27.82-.6 0-.29-.01-1.07-.02-2.1-3.34.74-4.05-1.63-4.05-1.63-.54-1.4-1.34-1.78-1.34-1.78-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.27 1.85 1.27 1.08 1.88 2.82 1.34 3.51 1.02.11-.8.42-1.34.76-1.65-2.67-.31-5.47-1.36-5.47-6.06 0-1.34.47-2.43 1.24-3.29-.12-.31-.54-1.56.12-3.26 0 0 1.01-.33 3.3 1.26.96-.27 1.99-.4 3.01-.41 1.02.01 2.05.14 3.01.41 2.29-1.59 3.3-1.26 3.3-1.26.66 1.7.24 2.95.12 3.26.77.86 1.24 1.95 1.24 3.29 0 4.71-2.81 5.75-5.48 6.05.43.38.81 1.12.81 2.26 0 1.63-.01 2.94-.01 3.34 0 .33.22.72.83.6C20.56 22.29 24 17.69 24 12.27 24 5.5 18.63 0 12 0z"
+                    />
+                  </svg>
+                </span>
+                <span class="channel__meta">
+                  <span class="channel__label">GitHub</span>
+                  <span class="channel__value">github / rickccastro</span>
+                </span>
+                <span class="channel__arrow">↗</span>
+              </a>
+              <a
+                class="channel"
+                href="https://wa.me/7192907777"
+                target="_blank"
+                rel="noopener"
+                role="listitem"
+              >
+                <span class="channel__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.5 3.5A11.4 11.4 0 0012.04 0C5.5 0 .15 5.3.15 11.85c0 2.08.55 4.1 1.6 5.9L0 24l6.4-1.68a11.9 11.9 0 005.63 1.43h.01c6.54 0 11.89-5.3 11.89-11.85 0-3.17-1.23-6.15-3.43-8.4zM12.04 21.7h-.01a9.86 9.86 0 01-5.02-1.37l-.36-.21-3.8 1 1.02-3.7-.24-.38a9.83 9.83 0 01-1.5-5.2c0-5.43 4.44-9.86 9.9-9.86 2.64 0 5.12 1.03 6.99 2.9a9.8 9.8 0 012.9 6.97c0 5.44-4.44 9.85-9.9 9.85zm5.43-7.38c-.3-.15-1.76-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.15-.17.2-.35.22-.65.08-.3-.15-1.25-.46-2.39-1.47-.88-.78-1.48-1.75-1.66-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1-1.04 2.45s1.07 2.85 1.21 3.05c.15.2 2.1 3.18 5.08 4.46.71.3 1.26.49 1.69.62.71.22 1.36.19 1.87.12.57-.08 1.76-.71 2-1.4.24-.69.24-1.27.17-1.4-.07-.13-.27-.2-.57-.35z"
+                    />
+                  </svg>
+                </span>
+                <span class="channel__meta">
+                  <span class="channel__label">WhatsApp</span>
+                  <span class="channel__value">+55 71 99290-7777</span>
+                </span>
+                <span class="channel__arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          © <span id="year"></span> &nbsp;//&nbsp; RICK&nbsp;C.&nbsp;CASTRO
+          &nbsp;//&nbsp; TODOS OS SISTEMAS OPERACIONAIS
+        </div>
+        <div class="footer__status">
+          <span class="dot"></span> v0.1.0 · FEITO COM HTML, CSS &amp; CAFEÍNA
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
